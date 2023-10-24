@@ -89,7 +89,8 @@
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: 'mapbox://styles/mapbox/streets-v12', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
-      zoom: 5,
+      projection: 'globe',
+      zoom: 8,
       center: [30, 50],
       transformRequest: transformRequest
     });
